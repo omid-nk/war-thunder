@@ -33,7 +33,7 @@ const categories = [
 
 export default function CategorySelector({ active, setActive }) {
   return (
-    <div className="max-w-5xl mx-auto py-14">
+    <div className="max-w-5xl hidden lg:block mx-auto py-14">
       <h3 className="text-gray-200 text-4xl font-medium mb-8 text-center">
         Military Vehicles
       </h3>

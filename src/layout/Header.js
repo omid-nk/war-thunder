@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { HiBars3 } from "react-icons/hi2";
 
 export function Header() {
   return (
@@ -13,7 +14,7 @@ export function Header() {
             height={15}
             alt="svg logo gijin"
           />
-          <ul className="flex gap-4 text-xs text-gray-400">
+          <ul className="hidden gap-4 text-xs text-gray-400 sm:flex">
             <li className="uppercase transition-colors cursor-pointer hover:text-white">
               games
             </li>
@@ -28,6 +29,7 @@ export function Header() {
             </li>
           </ul>
         </div>
+
         {/* right */}
         <div>
           <p className="text-sm text-gray-300 transition-colors cursor-pointer hover:text-white">
@@ -35,16 +37,20 @@ export function Header() {
           </p>
         </div>
       </div>
+
       {/* bottom */}
-      <div className="w-full h-36 bg-black/40 flex justify-center items-center">
-        <div className="max-w-7xl p-2 flex items-center gap-8">
+      <div className="w-full h-fit lg:h-36 bg-black/40 flex justify-center items-center">
+        <div className="max-w-7xl p-2 flex lg:justify-center gap-10 lg:gap-8 justify-between items-center">
           <Image
             src="/svgs/logo-warthunder-new.svg"
-            width={212}
+            width={180}
             height={0}
             alt="logo"
           />
-          <ul className="flex gap-6 text-lg text-gray-200">
+
+          <HiBars3 className="flex lg:hidden text-white w-8 h-8" />
+
+          <ul className="hidden gap-6 text-lg text-gray-200 lg:flex">
             <li className="uppercase cursor-pointer transition-all hover:text-white hover:text-shadow-lg text-shadow-white/25">
               game
             </li>

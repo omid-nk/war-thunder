@@ -58,7 +58,7 @@ export default function StudioCursor() {
   return (
     <motion.div
       style={{ x, y }}
-      className="fixed top-0 left-0 z-50 pointer-events-none"
+      className="fixed top-0 left-0 z-40 pointer-events-none lg:block hidden"
     >
       <motion.div
         animate={
@@ -82,7 +82,7 @@ export default function StudioCursor() {
         className="
           -translate-x-1/2 -translate-y-1/2
           backdrop-blur-xl
-          bg-black/40
+          bg-black/20
           border border-white/20
           mix-blend-difference
         "

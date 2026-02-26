@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function Links() {
   return (
-    <div className="w-full bg-mist-950 py-6 px-2 border-y border-mist-800 my-12 flex gap-2 items-center justify-center">
+    <div className="w-full flex-wrap bg-mist-950 py-6 px-2 border-y border-mist-800 my-12 flex gap-2 items-center justify-center">
       <div className=" relative brightness-125 hover:-translate-y-1 transition-all border border-mist-800 hover:border-mist-600 cursor-pointer">
         <Image
           src="/image/quick-link__about.jpg"

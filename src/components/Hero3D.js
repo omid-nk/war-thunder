@@ -78,7 +78,6 @@ export default function Hero3D({ scene }) {
     };
   }, [isMobile]);
 
-  // شدت کمتر برای موبایل
   const intensity = isMobile ? 20 : 100;
 
   const bgX = useTransform(smoothX, (v) => v * -(intensity * 0.2));
@@ -91,7 +90,7 @@ export default function Hero3D({ scene }) {
   const frontY = useTransform(smoothY, (v) => v * -intensity);
 
   return (
-    <div className="relative w-full min-h-[70vh] md:h-screen overflow-hidden">
+    <div className="relative w-full hidden lg:block min-h-[70vh] md:h-screen overflow-hidden">
       <AnimatePresence mode="wait">
         <motion.div
           key={scene}
@@ -115,7 +114,6 @@ export default function Hero3D({ scene }) {
             className="absolute inset-0 w-full h-full object-cover"
           />
 
-          {/* Dark overlay برای خوانایی */}
           <div className="absolute inset-0 bg-black/40" />
 
           {/* Title */}

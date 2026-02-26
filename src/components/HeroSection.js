@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export function HeroSection() {
   return (
-    <section className="relative w-full min-h-[70vh] md:min-h-[85vh] overflow-hidden">
+    <section className="relative w-full mb-4 md:min-h-[85vh] overflow-hidden">
       {/* Background Video */}
       <video
         autoPlay
@@ -29,7 +29,7 @@ export function HeroSection() {
           width={600}
           height={0}
           alt="War Thunder Logo"
-          className="w-[280px] md:w-[420px] lg:w-[620px] h-auto"
+          className="w-70 md:w-105 lg:w-155 h-auto"
           priority
         />
         {/* Logos */}
@@ -54,29 +54,29 @@ export function HeroSection() {
         </div>
         <button
           data-magnetic
-          className="px-10 py-4 rounded-xl bg-white text-black font-semibold"
+          className="px-10 py-4 rounded-xl bg-white text-black font-semibold cursor-pointer"
         >
           Download Game
         </button>
+
         {/* 🔥 Scroll Indicator */}
         <div className="flex flex-col items-center mt-2">
-          <FiChevronDown className="text-white text-2xl animate-bounce-slow" />
-          <FiChevronDown className="text-white text-2xl animate-bounce-slow [animation-delay:0.2s]" />
-          <FiChevronDown className="text-white text-2xl animate-bounce-slow [animation-delay:0.4s]" />
+          <FiChevronDown className="text-white text-lg md:text-2xl animate-bounce-slow" />
+          <FiChevronDown className="text-white text-lg md:text-2xl animate-bounce-slow [animation-delay:0.2s]" />
+          <FiChevronDown className="text-white text-lg md:text-2xl animate-bounce-slow [animation-delay:0.4s]" />
         </div>
-        <p className="max-w-5xl text-left text-2xl text-gray-200 font-bold tracking-wide leading-8 mt-6">
-          {" "}
+
+        {/* text */}
+        <p className="hidden md:block max-w-5xl text-left text-md sm:text-xl text-gray-200 font-bold tracking-wide md:leading-8 mt-0 md:mt-6 md:text-2xl">
           War Thunder is the most comprehensive free-to-play, cross-platform,
           MMO military game for Windows, Linux, Mac, PlayStation®4,
           PlayStation®5, Xbox One and Xbox Series X|S dedicated to aviation,
           armoured vehicles, and naval vessels from the early 20th century to
           the most advanced modern combat units. Join now and take part in major
           battles on land, in the air and at sea, fighting with millions of
-          other players from all over the world in an ever-evolving
-          environment.{" "}
-        </p>{" "}
-        <p className="max-w-5xl text-left text-2xl text-gray-200 font-bold tracking-wide leading-8">
-          {" "}
+          other players from all over the world in an ever-evolving environment.
+        </p>
+        <p className="hidden md:block max-w-5xl text-left text-md sm:text-xl text-gray-200 font-bold tracking-wide md:leading-8 md:text-2xl">
           In War Thunder, aircraft, attack helicopters, ground forces and naval
           vessels collaborate in realistic competitive battles. You can choose
           from over 2,500 vehicles from the early 20th century to the most
@@ -85,7 +85,7 @@ export function HeroSection() {
           from a bomber turret, defending your teammates on the ground from an
           air raid with anti-aircraft guns, shooting down enemy aircraft with a
           firestorm from multiple rocket launchers, or trying to sink an enemy
-          warship with a torpedo from a fast attack boat.{" "}
+          warship with a torpedo from a fast attack boat.
         </p>
       </div>
     </section>
