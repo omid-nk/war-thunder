@@ -40,12 +40,12 @@ export default function GameGallery() {
           nextEl: ".next-btn",
           prevEl: ".prev-btn",
         }}
-        className="relative h-[700px]"
+        className="relative h-175"
       >
         {images.map((src, i) => (
           <SwiperSlide key={i}>
             {({ isActive }) => (
-              <div className="relative w-full h-[700px] overflow-hidden">
+              <div className="relative w-full h-175 overflow-hidden">
                 <Image
                   src={src}
                   alt="game screenshot"
@@ -53,12 +53,12 @@ export default function GameGallery() {
                   sizes="100vw"
                   priority={i === 0}
                   quality={80}
-                  className={`object-cover transition-transform ease-out duration-[6000ms] 
+                  className={`object-cover transition-transform ease-out duration-6000 
                   ${isActive ? "scale-105" : "scale-110"}`}
                 />
 
                 {/* Cinematic Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/70" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/40 to-black/70" />
               </div>
             )}
           </SwiperSlide>

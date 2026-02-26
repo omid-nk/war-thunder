@@ -33,10 +33,10 @@ export default function LoadingScreen() {
       initial={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.8 }}
-      className="fixed inset-0 z-[9999] bg-mist-900 flex flex-col items-center justify-center overflow-hidden"
+      className="fixed inset-0 z-50 bg-mist-900 flex flex-col items-center justify-center overflow-hidden"
     >
       {/* Background Grid */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:50px_50px]" />
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-size-[50px_50px]" />
 
       {/* Radar */}
       <div className="relative w-56 h-56 mb-14">
@@ -47,8 +47,8 @@ export default function LoadingScreen() {
 
         {/* Crosshair */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-full h-[1px] bg-mist-600/30 absolute" />
-          <div className="h-full w-[1px] bg-mist-600/30 absolute" />
+          <div className="w-full h-px bg-mist-600/30 absolute" />
+          <div className="h-full w-px bg-mist-600/30 absolute" />
         </div>
 
         {/* Sweep */}
